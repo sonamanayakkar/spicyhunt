@@ -1,0 +1,61 @@
+
+
+:root{
+
+    --dark-color: #0e110d;
+    --dark-green-color: #1f2120;
+    --light-green-color:   #a6a182 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.servicesection2 {
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.servicesection2 .container .row .dine{
+    border: .1px solid rgb(70, 70, 70);
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+.servicesection2 .container .row .dine:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.658);
+}
+
+
+.servicesection2::before{
+    content: "";
+    position: absolute;
+    transform-origin: right;
+    width:200px ;
+    height: 150px;
+    left: -2%;
+    top: 10%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/burger-image.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: chilli2 4s linear infinite alternate-reverse;
+}
+
+@keyframes chilli2 {
+    
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+         transform: rotate(30deg);
+    }
+}

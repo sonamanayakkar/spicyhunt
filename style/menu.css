@@ -1,0 +1,397 @@
+:root{
+
+    --dark-color: #0e110d;
+    --dark-green-color: #1f2120;
+    --light-green-color:   #a6a182 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menusection3{
+    background-color: var(--dark-color);
+}
+
+.menusection5even{
+    background-color: var(--dark-color);
+}
+
+.menusection5 .container .menuheader{
+   
+    width: 30%;
+}
+
+
+.menusection5{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+
+ .menusection51::before{
+    content: "";
+    position: absolute;
+   
+    transform-origin: center;
+    width: 500px ;
+    height: 400px;
+    left: 0%;
+    top: 40%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+}
+
+@keyframes fish {
+    
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+ .menusection52::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 500px ;
+    height: 400px;
+    left: 0%;
+    top: 40%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+}
+
+@keyframes fish {
+    
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+ .menusection53::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 500px ;
+    height: 400px;
+    left: 0%;
+    top: 40%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+}
+
+@keyframes fish {
+    
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+ .menusection54::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 500px ;
+    height: 400px;
+    left: 0%;
+    top: 40%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+}
+
+@keyframes fish {
+    
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+ .menusection55::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 500px ;
+    height: 400px;
+    left: 0%;
+    top: 40%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+}
+
+@keyframes fish {
+    
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+ .menusection56::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 500px ;
+    height: 400px;
+    left: 0%;
+    top: 40%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+}
+
+@keyframes fish {
+    
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+
+
+.menusection3 .container .row .sm img{
+ transition: .3s ease;
+ 
+}
+
+
+
+
+.menusection3 .container .row .sm img:hover{
+   transform: scale(1.1);
+}
+
+
+
+
+@media screen and (max-width:700px){
+    
+    .menusection5 .container .menuheader{
+   
+    width: 100%;
+}
+
+
+.menusection51::before {
+    content: "";
+    position: absolute;
+    display: block;
+  
+    width: 150px;
+    height: 150px;
+    left:36%;
+    top: 9%;
+    background: url(../images/ani/fishfry.png) no-repeat center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite;
+   
+}
+
+@keyframes fish {
+    from {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+}
+
+.menusection52::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 150px ;
+    height: 150px;
+    left: 36%;
+    top: 9%;
+    transform: translate(-50%,-10%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+   
+}
+
+@keyframes fish {
+    
+    from{
+        
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+.menusection53::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 150px ;
+    height: 150px;
+    left: 36%;
+    top: 9%;
+    transform: translate(-50%,-10%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+   
+}
+
+@keyframes fish {
+    
+    from{
+        
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+.menusection54::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 150px ;
+    height: 150px;
+    left: 36%;
+    top: 9%;
+    transform: translate(-50%,-10%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+   
+}
+
+@keyframes fish {
+    
+    from{
+        
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+.menusection55::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 150px ;
+    height: 150px;
+    left: 36%;
+    top: 9%;
+    transform: translate(-50%,-10%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+   
+}
+
+@keyframes fish {
+    
+    from{
+        
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+.menusection56::before{
+    content: "";
+    position: absolute;
+  
+    transform-origin: center;
+    width: 150px ;
+    height: 150px;
+    left: 36%;
+    top: 9%;
+    transform: translate(-50%,-10%);
+    background: url(../images/ani/fishfry.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: fish 10s linear infinite ;
+   
+}
+
+@keyframes fish {
+    
+    from{
+        
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+}

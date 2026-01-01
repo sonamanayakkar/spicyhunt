@@ -1,0 +1,62 @@
+
+
+:root{
+
+    --dark-color: #0e110d;
+    --dark-green-color: #1f2120;
+    --light-green-color:   #a6a182 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.testimonialsection2{
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.testimonialsection2 .container .row .dine{
+    border: 1px rgb(50, 50, 50) solid; 
+    border-radius: 20px;
+    background-color: var(--dark-color);
+    transition: .3s ease;
+}
+
+.servicesection2 .container .row .dine:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.658);
+}
+
+
+.testimonialsection2::before{
+    content: "";
+    position: absolute;
+    transform-origin: right;
+    width:350px ;
+    height: 350px;
+    right: -7%;
+    top: 40%;
+    transform: translate(2%,-40%);
+    background: url(../images/ani/pizza-img.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: chilli2 5s linear infinite alternate-reverse;
+}
+
+@keyframes chilli2 {
+    
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+         transform: rotate(30deg);
+    }
+}

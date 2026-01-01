@@ -1,0 +1,294 @@
+
+
+
+:root{
+
+    --dark-color: #0e110d;
+    --dark-green-color: #1f2120;
+    --light-green-color:   #a6a182 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.aboutsection1 .aboutcontainer1 .aboutcontent{
+    padding: 70px 0;
+ 
+}
+
+.aboutlandingpage .aboutpic .pill{
+    border-radius: 20px;
+    background: url(../images/landing-page/hero-img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   
+}
+
+
+/*--------------aboutsection5-------------*/
+
+
+
+
+
+
+
+
+.aboutlandingpage .aboutpic .pill::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--dark-color);
+    opacity: 20%;
+ 
+    z-index: 1;
+}
+
+.aboutlandingpage .aboutpic .pill::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.aboutlandingpage .aboutpic .pill:hover:after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
+
+
+
+.aboutsection5{
+   position: relative;
+   overflow: hidden;
+    z-index: 1;
+}
+
+.aboutsection5::before{
+    content: "";
+    position: absolute;
+    transform-origin: left;
+    width: 200px ;
+    height: 200px;
+    left: -2%;
+    top: 10%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/burger-image.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: chilli2 4s linear infinite alternate-reverse;
+}
+
+@keyframes chilli2 {
+    
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+         transform: rotate(30deg);
+    }
+}
+
+
+/*-------------ourteam-----------------*/
+
+.ourteams{
+    background-color:var(--dark-color) ;
+    position: relative;
+    overflow: hidden;
+     z-index: 1;
+}
+
+.ourteams .ourteamcontainer .row .col {
+   
+    height: 55vh;
+    border-radius: 30px;
+}
+
+.ourteams .ourteamcontainer .row .col .name{
+    border: green solid;
+    width: 100%;
+    height: fit-content;
+}
+
+.ourteams .ourteamcontainer .row  .person1{
+  
+   border-radius: 30px;
+    height: 55vh;
+    overflow: hidden;
+}
+
+.ourteams .ourteamcontainer .row  .person1 .upperlayer{
+   
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.ourteams .ourteamcontainer .row  .person1 .upperlayer::before{
+    content: "";
+     background: linear-gradient(rgba(0, 0, 0, 0.1),black);
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: 1;
+    
+}
+
+.ourteams .ourteamcontainer .row  .person1 .upperlayer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s linear;
+}
+.ourteams .ourteamcontainer .row  .person1 .upperlayer:hover img{
+    transform: scale(1.1);
+}
+
+.ourteams .ourteamcontainer .row  .person1 .upperlayer:hover .aboutcontent{
+    bottom: 0;
+    
+}
+
+
+
+
+.ourteams .ourteamcontainer .row  .person1 .upperlayer .aboutcontent{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    bottom: -17%;
+     transition: .3s ease;
+     z-index: 2;
+}
+
+.ourteams .ourteamcontainer .row  .person1 .upperlayer .aboutcontent .app .three{
+   
+    transition: .3s ease;
+}
+
+
+
+.ourteams::before{
+    content: "";
+    position: absolute;
+    transform-origin: left;
+    width: 200px ;
+    height: 200px;
+    left: -2%;
+    top: 10%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/chili-image2.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: chilli2 4s linear infinite alternate-reverse;
+}
+
+@keyframes chilli2 {
+    
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+         transform: rotate(30deg);
+    }
+}
+
+
+
+
+@media screen and (max-width:700px) {
+
+/*--------------aboutsection5-------------*/
+
+    .aboutsection5::before{
+    content: "";
+    position: absolute;
+    transform-origin: left;
+    width: 100px ;
+    height: 100px;
+    left: -2%;
+    top: 10%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/burger-image.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: chilli2 4s linear infinite alternate-reverse;
+}
+
+@keyframes chilli2 {
+    
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+         transform: rotate(30deg);
+    }
+}
+
+
+
+
+/*----------------ourteams ------------*/
+
+.ourteams::before{
+    content: "";
+    position: absolute;
+    transform-origin: left;
+    width: 100px ;
+    height: 100px;
+    left: -2%;
+    top: 5%;
+    transform: translate(2%,-60%);
+    background: url(../images/ani/chili-image2.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    animation: chilli2 4s linear infinite alternate-reverse;
+}
+
+@keyframes chilli2 {
+    
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+         transform: rotate(30deg);
+    }
+}
+
+
+
+    
+}
+
+
+
+
+
+
+

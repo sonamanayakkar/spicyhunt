@@ -1,0 +1,34 @@
+
+
+:root{
+
+    --dark-color: #0e110d;
+    --dark-green-color: #1f2120;
+    --light-green-color:   #a6a182 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactsection10{
+    background: none;
+    background-color: var(--dark-color);
+}
+
+.map iframe{
+    height: 70vh;
+    width: 100%;
+}
+
+.contactsection10 .container .app .three{
+    transition: .3s ease;
+}
+
+.contactsection10 .container .app .three:hover{
+    transform: translateY(-10px);
+    background-color: rgba(128, 128, 128, 0.453);
+}
