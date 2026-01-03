@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
 :root {
 
     --dark-color: #0e110d;
@@ -13,13 +19,114 @@
 
 
 
+.navbutton::before{
+    content: none;
+}
 
 
+button{
+    background-color: var(--light-green-color);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   border: none;
+   transition: all 0.4s ease-in-out;
+}
+
+
+button:hover{
+    color: black;
+}
+
+
+
+.button1::before{
+     content: '';
+    transition: .3s linear;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: var(--light-green-color);
+    transform: skew(45deg);
+    transition: all 0.4s ease-in-out;
+      z-index: -1;
+}
+
+.button1{
+    color: black;
+}
+
+.button1:hover{
+    color: white;
+}
+
+.button1:hover::before{
+     width: 100%;
+      left: 0;
+      transform: skew(0deg);
+      
+}
+
+
+button::before {
+    content: '';
+    transition: .3s linear;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: white;
+    transform: skew(45deg);
+    transition: all 0.4s ease-in-out;
+      z-index: -1;
+   
+}
+
+button:hover::before{
+     width: 100%;
+      left: 0;
+      transform: skew(0deg);
+      
+}
 
 
 
 .button1 {
     background-color: var(--light-green-color);
+}
+
+.button2::before{
+   content: '';
+    transition: .3s linear;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: var(--dark-color);
+    transform: skew(45deg);
+    transition: all 0.4s ease-in-out;
+      z-index: -1;
+}
+
+.button2:hover{
+    color: white;
+}
+
+.button2:hover::before{
+     width: 100%;
+      left: 0;
+      transform: skew(0deg);
 }
 
 
@@ -33,12 +140,31 @@ section .hea-der {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: visible;
 
 }
 
 .container1 {
     background-color: rgba(21, 21, 21, 0.741);
 }
+
+.padding{
+    padding-top: 30vh;
+}
+
+.section1 .container1 .headersticky{
+    position: fixed;
+    top: 0;
+    transition: .3s linear;
+     background-color:var(--dark-color);
+}
+
+.section1 .container1 #header{
+    z-index: 100;
+   
+}
+
+
 
 .section1 .container1 .header .logo {
     width: 60px;
@@ -326,6 +452,22 @@ section .hea-der {
     font-size: 4rem;
 }
 
+.section2 .cate .lists .l1 img{
+    transition: .3s ease;
+}
+.section2 .cate .lists .l1 .one{
+      transition: .3s ease;
+}
+
+.section2 .cate .lists .l1:hover .one{
+    background-color: rgb(255, 255, 255);
+}
+
+.section2 .cate .lists .l1:hover img{
+   transform: scale(1.2) rotateY(180deg);
+  filter: brightness(0) invert(0);
+}
+
 
 .section2::before {
 
@@ -572,7 +714,12 @@ h6 {
 .section5 .menulist .container .row picture img {
 
     width: 150px;
+    transition: .5s ease;
 
+}
+
+.section5 .menulist .container .row .col:hover picture img{
+    transform:scale(1.1) rotate(360deg);
 }
 
 .section5 .menufood {
@@ -604,6 +751,13 @@ h6 {
     to {
         transform: rotate(30deg);
     }
+}
+
+/*-----------section 6-------------*/
+
+
+.section6 .container1 .play{
+    cursor: pointer;
 }
 
 
@@ -716,6 +870,15 @@ h6 {
     overflow: hidden;
 }
 
+.section7 .cate .lists .l1 .f img{
+    transition: .3s ease;
+}
+
+.section7 .cate .lists .l1:hover .f img{
+    transform: rotate(360deg);
+    filter: brightness(0) invert(0);
+}
+
 .section7 .cate .lists .l1 .f::before {
     position: absolute;
     content: "";
@@ -723,7 +886,7 @@ h6 {
     height: 0%;
     left: 0;
     top: 0;
-    background-color: rgba(128, 128, 128, 0.644);
+    background-color: rgba(255, 255, 255, 0.644);
     border-radius: 50%;
     transition: .2s ease;
 }
